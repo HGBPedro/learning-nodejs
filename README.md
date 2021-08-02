@@ -1,0 +1,1 @@
+Projeto criado para aprender o básico de desnevolvimento de uma API NodeJS com MongoDB e TypeScript. O projeto foi criado conforme tutorial de Tom Nagle em https://tomanagle.medium.com/build-a-rest-api-with-node-js-typescript-mongodb-b6c898d70d61

@@ -1,0 +1,39 @@
+Arguments: 
+  /home/pedroh/.asdf/installs/nodejs/16.6.0/bin/node /home/pedroh/.asdf/installs/yarn/1.22.11/bin/yarn.js add express yup config cors express mongoose pino pino-pretty dayjs bcrypt jsonwebtoken lodash nanoid
+
+PATH: 
+  /home/pedroh/.asdf/plugins/nodejs/shims:/home/pedroh/.asdf/installs/nodejs/16.6.0/.npm/bin:/home/pedroh/.asdf/installs/nodejs/16.6.0/bin:/home/pedroh/.asdf/installs/yarn/1.22.11/bin:/home/pedroh/.asdf/shims:/opt/asdf-vm/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl
+
+Yarn version: 
+  1.22.11
+
+Node version: 
+  16.6.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  SyntaxError: /home/pedroh/Fontes/learning-node/package.json: Unexpected token } in JSON at position 167
+      at JSON.parse (<anonymous>)
+      at /home/pedroh/.asdf/installs/yarn/1.22.11/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/home/pedroh/.asdf/installs/yarn/1.22.11/lib/cli.js:310:30)
+      at /home/pedroh/.asdf/installs/yarn/1.22.11/lib/cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "learning-node",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "scripts": {
+      "dev": "nodemon --config nodemon.json src/app.ts"
+    },
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

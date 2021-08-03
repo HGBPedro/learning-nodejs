@@ -3,7 +3,7 @@ import config from "config";
 import log from "./logger";
 import connect from "./db/connect";
 import routes from "./routes";
-import deserializeUser from './middleware'
+import { deserializeUser } from './middleware/index'
 
 const port = config.get("port") as number;
 const host = config.get("host") as string;

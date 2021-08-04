@@ -12,7 +12,7 @@ export async function createUserSessionHandler(req: Request, res: Response) {
     return res.status(401).send('Invalid username or passwowrd')
   }
 
-  const session = await createSesion(user._id, req.integrity('user-agent') || "")
+  const session = await createSession(user._id, req.get('user-agent') || "")
 
   const accessToken = createAccessToken({
     user,
@@ -27,7 +27,7 @@ export async function createUserSessionHandler(req: Request, res: Response) {
 }
 
 export async function invalidateUserSessionHandler (req: Request, res: Response) {
-  const sesisonId = get(req, 'user.session')
+  const sessionId = get(req, 'user.session')
 
   await updateSession({ _id: sessionId }, { valid: false })
 
